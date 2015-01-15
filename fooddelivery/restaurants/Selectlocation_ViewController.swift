@@ -15,6 +15,7 @@ class Selectlocation_ViewController: UIViewController {
     @IBOutlet var selectArea: UIButton!
     @IBOutlet var searchLocation: UIButton!
     @IBAction func showRestaurants(sender: AnyObject) {
+        self.performSegueWithIdentifier("showRestaurants", sender: self)
     }
     @IBAction func showCity(sender: AnyObject) {
         println("CITY")
@@ -34,8 +35,12 @@ class Selectlocation_ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         self.searchLocation.layer.borderColor = UIColor.whiteColor().CGColor
         self.searchLocation.layer.borderWidth = 2
+        
+        self.selectCity.setTitle("Bali", forState: UIControlState.Normal)
+        self.selectArea.setTitle("Legian", forState: UIControlState.Normal)
         
         self.selectCity.addTarget(self, action: "touchDown:", forControlEvents: UIControlEvents.TouchDown)
         self.selectCity.addTarget(self, action: "touchUp:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -68,17 +73,19 @@ class Selectlocation_ViewController: UIViewController {
         let iOS7 = iosVersion >= 7 && iosVersion < 8 //check version
         if segue.identifier == "showCity"
         {
-            if (iOS8){
-                
-                //Leave this blank if you have set presentation style to "over current context"
-                
-                
-            }
-            else
-            {
-                self.navigationController?.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-                self.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-            }
+//            let controller = segue.destinationViewController as Listcity_ViewController
+//            let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+//            self.presentViewController(controller, animated: true, completion: { () -> Void in
+//                controller.dismissViewControllerAnimated(false, completion: { () -> Void in
+//                    appDelegate.window?.rootViewController?.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
+//                    self.presentViewController(controller, animated: false, completion: nil)
+//                    appDelegate.window?.rootViewController?.modalPresentationStyle = UIModalPresentationStyle.FullScreen
+//                    
+//                })
+//            })
+        }
+        else if segue.identifier == "showRestaurants" {
+         
         }
     }
     
