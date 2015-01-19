@@ -19,6 +19,11 @@
 		C9BC029D1A67BD2200756E39 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC029B1A67BD2200756E39 /* CustomPresentationController.swift */; };
 		C9BC029E1A67BD2200756E39 /* CustomPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC029C1A67BD2200756E39 /* CustomPresentationAnimationController.swift */; };
 		C9BC02A11A67C2FE00756E39 /* Listrestaurant_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC02A01A67C2FE00756E39 /* Listrestaurant_TableViewController.swift */; };
+		C9F1CED31A68A9E90055B434 /* Listrestaurant_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1CED21A68A9E90055B434 /* Listrestaurant_ViewController.swift */; };
+		C9F1CED71A68B2AC0055B434 /* Listrestaurant_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1CED61A68B2AC0055B434 /* Listrestaurant_TableViewCell.swift */; };
+		C9F1CEDB1A68CCC20055B434 /* Basket_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1CEDA1A68CCC20055B434 /* Basket_TableViewController.swift */; };
+		C9F1CEDD1A68E4A10055B434 /* sectionRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1CEDC1A68E4A10055B434 /* sectionRows.swift */; };
+		C9F1CEDF1A68EA0F0055B434 /* Basket_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1CEDE1A68EA0F0055B434 /* Basket_TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		C9BC029B1A67BD2200756E39 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 		C9BC029C1A67BD2200756E39 /* CustomPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationAnimationController.swift; sourceTree = "<group>"; };
 		C9BC02A01A67C2FE00756E39 /* Listrestaurant_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Listrestaurant_TableViewController.swift; path = restaurants/Listrestaurant_TableViewController.swift; sourceTree = "<group>"; };
+		C9F1CED21A68A9E90055B434 /* Listrestaurant_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Listrestaurant_ViewController.swift; path = restaurants/Listrestaurant_ViewController.swift; sourceTree = "<group>"; };
+		C9F1CED61A68B2AC0055B434 /* Listrestaurant_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Listrestaurant_TableViewCell.swift; path = restaurants/Listrestaurant_TableViewCell.swift; sourceTree = "<group>"; };
+		C9F1CEDA1A68CCC20055B434 /* Basket_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Basket_TableViewController.swift; path = basket/Basket_TableViewController.swift; sourceTree = "<group>"; };
+		C9F1CEDC1A68E4A10055B434 /* sectionRows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sectionRows.swift; sourceTree = "<group>"; };
+		C9F1CEDE1A68EA0F0055B434 /* Basket_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Basket_TableViewCell.swift; path = basket/Basket_TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 		C98BF0EF1A6650E70072E36F /* fooddelivery */ = {
 			isa = PBXGroup;
 			children = (
+				C9F1CED91A68CCA10055B434 /* basket */,
 				C98BF1141A6658000072E36F /* restaurants */,
 				C98BF0F21A6650E70072E36F /* AppDelegate.swift */,
 				C98BF0F41A6650E70072E36F /* FirstViewController.swift */,
@@ -133,6 +144,8 @@
 				C98BF1151A66586E0072E36F /* Selectlocation_ViewController.swift */,
 				C98C9C721A676C8A0065A647 /* Listcity_ViewController.swift */,
 				C9BC02A01A67C2FE00756E39 /* Listrestaurant_TableViewController.swift */,
+				C9F1CED21A68A9E90055B434 /* Listrestaurant_ViewController.swift */,
+				C9F1CED61A68B2AC0055B434 /* Listrestaurant_TableViewCell.swift */,
 			);
 			name = restaurants;
 			sourceTree = "<group>";
@@ -140,10 +153,20 @@
 		C9BC029F1A67C24900756E39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C9F1CEDC1A68E4A10055B434 /* sectionRows.swift */,
 				C9BC029B1A67BD2200756E39 /* CustomPresentationController.swift */,
 				C9BC029C1A67BD2200756E39 /* CustomPresentationAnimationController.swift */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		C9F1CED91A68CCA10055B434 /* basket */ = {
+			isa = PBXGroup;
+			children = (
+				C9F1CEDA1A68CCC20055B434 /* Basket_TableViewController.swift */,
+				C9F1CEDE1A68EA0F0055B434 /* Basket_TableViewCell.swift */,
+			);
+			name = basket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +271,14 @@
 			files = (
 				C98BF0F71A6650E70072E36F /* SecondViewController.swift in Sources */,
 				C98BF1161A66586E0072E36F /* Selectlocation_ViewController.swift in Sources */,
+				C9F1CED71A68B2AC0055B434 /* Listrestaurant_TableViewCell.swift in Sources */,
 				C9BC029D1A67BD2200756E39 /* CustomPresentationController.swift in Sources */,
 				C98C9C731A676C8A0065A647 /* Listcity_ViewController.swift in Sources */,
+				C9F1CED31A68A9E90055B434 /* Listrestaurant_ViewController.swift in Sources */,
 				C98BF0F31A6650E70072E36F /* AppDelegate.swift in Sources */,
+				C9F1CEDB1A68CCC20055B434 /* Basket_TableViewController.swift in Sources */,
+				C9F1CEDF1A68EA0F0055B434 /* Basket_TableViewCell.swift in Sources */,
+				C9F1CEDD1A68E4A10055B434 /* sectionRows.swift in Sources */,
 				C9BC029E1A67BD2200756E39 /* CustomPresentationAnimationController.swift in Sources */,
 				C9BC02A11A67C2FE00756E39 /* Listrestaurant_TableViewController.swift in Sources */,
 				C98BF0F51A6650E70072E36F /* FirstViewController.swift in Sources */,

@@ -9,6 +9,7 @@
 import UIKit
 
 class Listcity_ViewController: UIViewController, UIViewControllerTransitioningDelegate {
+    /* pop UP VIEW
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.commonInit()
@@ -56,11 +57,13 @@ class Listcity_ViewController: UIViewController, UIViewControllerTransitioningDe
             return nil
         }
     }
+*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBarHidden = false
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
     }
 

@@ -39,6 +39,8 @@ class Selectlocation_ViewController: UIViewController {
         self.searchLocation.layer.borderColor = UIColor.whiteColor().CGColor
         self.searchLocation.layer.borderWidth = 2
         
+        
+        
         self.selectCity.setTitle("Bali", forState: UIControlState.Normal)
         self.selectArea.setTitle("Legian", forState: UIControlState.Normal)
         
